@@ -1,0 +1,13 @@
+.env
+
+# Dependências
+node_modules/
+
+# Build
+dist/
+build/
+
+# Ambiente e Configurações
+.env
+.env.local
+.vscode/
