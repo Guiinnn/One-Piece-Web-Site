@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="pt-br">
+ 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Piece Wiki | ByteClass</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bebas+Neue&display=swap"
+    rel="stylesheet" />
+  <!-- Biblioteca Swiper carregada via CDN: controla os carrosséis da página -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="midia/one-piece-logo.png" alt="One Piece Logo" />
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#personagens">Personagens</a></li>
+          <li><a href="#history">História</a></li>
+          <li><a href="#conversar">Conversar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="TextoExplore"><img src="midia/TextoExplore.png" alt="Explore a Grand Line"></h1>
+        <p>
+          Acompanhe a jornada de Monkey D. Luffy para se tornar o Rei dos
+          Piratas.
+        </p>
+        <a href="#personagens" class="btn-primary">Ver Tripulação</a>
+      </div>
+    </section>
+
+    <section id="personagens" class="characters">
+      <h2 class="section-title">Personagens Principais</h2>
+
+      <!-- Carrossel principal: envolve todos os cards de personagens -->
+      <div class="swiper swiper-main">
+        <div class="swiper-wrapper">
+
+          <!-- Personagem 1: Luffy -->
+          <div class="swiper-slide character-slide">
+            <h3 class="character-name">Monkey D. Luffy</h3>
+
+            <!-- Carrossel interno: mostra fotos/vídeos do personagem dentro de cada card -->
+            <div class="swiper swiper-inner">
+              <div class="swiper-wrapper">
+                <!-- 2 Fotos -->
+                <div class="swiper-slide"><img src="midia/LuffyWanted.webp" alt="Luffy Foto 1"></div>
+                <div class="swiper-slide"><img src="midia/Monkey D. Luffy.gif" alt="Luffy Foto 2"></div>
+                <!-- 3 Vídeos (Usando placeholder de vídeo/iframe, substitua pelos arquivos reais) -->
+                <div class="swiper-slide">
+                  <video controls poster="https://via.placeholder.com/600x400/000/fff?text=Video+1+Capa">
+                    <source src="midia/video1.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                  </video>
+                </div>
+                <div class="swiper-slide">
+                  <video controls poster="https://via.placeholder.com/600x400/000/fff?text=Video+2+Capa">
+                    <source src="midia/video2.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="swiper-slide">
+                  <video controls poster="https://via.placeholder.com/600x400/000/fff?text=Video+3+Capa">
+                    <source src="midia/video3.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <!-- Paginação e navegação do carrossel interno: pontos e setas para trocar os slides -->
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next inner-next"></div>
+              <div class="swiper-button-prev inner-prev"></div>
+            </div>
+          </div>
+
+          <!-- Personagem 2: Zoro -->
+          <div class="swiper-slide character-slide">
+            <h3 class="character-name">Roronoa Zoro</h3>
+
+            <div class="swiper swiper-inner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="midia/ZoroWanted.jpg" alt="Zoro Foto 1"></div>
+                <div class="swiper-slide"><img src="midia/Zoro.gif" alt="Zoro Foto 2"></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/zoro-vid1.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/zoro-vid2.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/zoro-vid3.mp4" type="video/mp4">
+                  </video></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next inner-next"></div>
+              <div class="swiper-button-prev inner-prev"></div>
+            </div>
+          </div>
+
+          <!-- Personagem 3: Sanji -->
+          <div class="swiper-slide character-slide">
+            <h3 class="character-name">Sanji</h3>
+
+            <div class="swiper swiper-inner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="midia/SanjiWanted.jpg" alt="Sanji Foto 1"></div>
+                <div class="swiper-slide"><img src="midia/Sanji.gif" alt="Sanji Foto 2"></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/sanji-vid1.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/sanji-vid2.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/sanji-vid3.mp4" type="video/mp4">
+                  </video></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next inner-next"></div>
+              <div class="swiper-button-prev inner-prev"></div>
+            </div>
+          </div>
+
+          <!-- Personagem 4: Nami -->
+          <div class="swiper-slide character-slide">
+            <h3 class="character-name">Nami</h3>
+
+            <div class="swiper swiper-inner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="midia/NamiWanted.jpg" alt="Nami Foto 1"></div>
+                <div class="swiper-slide"><img src="midia/Nami.gif" alt="Nami Foto 2"></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/nami-vid1.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/nami-vid2.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/nami-vid3.mp4" type="video/mp4">
+                  </video></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next inner-next"></div>
+              <div class="swiper-button-prev inner-prev"></div>
+            </div>
+          </div>
+
+          <!-- Personagem 5: Chopper -->
+          <div class="swiper-slide character-slide">
+            <h3 class="character-name">Chopper</h3>
+
+            <div class="swiper swiper-inner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="midia/ChopperWanted.jpg" alt="Chopper Foto 1"></div>
+                <div class="swiper-slide"><img src="midia/Chopper.gif" alt="Chopper Foto 2"></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/chopper-vid1.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/chopper-vid2.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/chopper-vid3.mp4" type="video/mp4">
+                  </video></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next inner-next"></div>
+              <div class="swiper-button-prev inner-prev"></div>
+            </div>
+          </div>
+
+          <!-- Personagem 6: Robin -->
+          <div class="swiper-slide character-slide">
+            <h3 class="character-name">Nico Robin</h3>
+
+            <div class="swiper swiper-inner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="midia/RobinWanted.jpg" alt="Robin Foto 1"></div>
+                <div class="swiper-slide"><img src="midia/Robin.gif" alt="Robin Foto 2"></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/robin-vid1.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/robin-vid2.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/robin-vid3.mp4" type="video/mp4">
+                  </video></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next inner-next"></div>
+              <div class="swiper-button-prev inner-prev"></div>
+            </div>
+          </div>
+
+          <!-- Personagem 7: Usopp -->
+          <div class="swiper-slide character-slide">
+            <h3 class="character-name">Usopp</h3>
+
+            <div class="swiper swiper-inner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="midia/UsoppWanted.jpg" alt="Usopp Foto 1"></div>
+                <div class="swiper-slide"><img src="midia/Usopp.gif" alt="Usopp Foto 2"></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/usopp-vid1.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/usopp-vid2.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/usopp-vid3.mp4" type="video/mp4">
+                  </video></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next inner-next"></div>
+              <div class="swiper-button-prev inner-prev"></div>
+            </div>
+          </div>
+
+          <!-- Personagem 8: Franky -->
+          <div class="swiper-slide character-slide">
+            <h3 class="character-name">Franky</h3>
+            <div class="swiper swiper-inner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="midia/FrankyWanted.jpg" alt="Franky Foto 1"></div>
+                <div class="swiper-slide"><img src="midia/Franky.gif" alt="Franky Foto 2"></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/franky-vid1.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/franky-vid2.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/franky-vid3.mp4" type="video/mp4">
+                  </video></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next inner-next"></div>
+              <div class="swiper-button-prev inner-prev"></div>
+            </div>
+          </div>
+
+          <!-- Personagem 9: Brook -->
+          <div class="swiper-slide character-slide">
+            <h3 class="character-name">Brook</h3>
+            <div class="swiper swiper-inner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="midia/BrookWanted.jpg" alt="Brook Foto 1"></div>
+                <div class="swiper-slide"><img src="midia/Brook.gif" alt="Brook Foto 2"></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/brook-vid1.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/brook-vid2.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/brook-vid3.mp4" type="video/mp4">
+                  </video></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next inner-next"></div>
+              <div class="swiper-button-prev inner-prev"></div>
+            </div>
+          </div>
+
+          <!-- Personagem 10: Jinbe -->
+          <div class="swiper-slide character-slide">
+            <h3 class="character-name">Jinbe</h3>
+            <div class="swiper swiper-inner">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="midia/JinbeWanted.jpg" alt="Jinbe Foto 1"></div>
+                <div class="swiper-slide"><img src="midia/Jinbe.gif" alt="Jinbe Foto 2"></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/jinbe-vid1.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/jinbe-vid2.mp4" type="video/mp4">
+                  </video></div>
+                <div class="swiper-slide"><video controls>
+                    <source src="midia/jinbe-vid3.mp4" type="video/mp4">
+                  </video></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next inner-next"></div>
+              <div class="swiper-button-prev inner-prev"></div>
+            </div>
+          </div>
+        </div> <!-- Fim do swiper-wrapper -->
+
+        <!-- Setas do carrossel principal -->
+        <div class="swiper-button-next main-next"></div>
+        <div class="swiper-button-prev main-prev"></div>
+      </div>
+    </section>
+
+    <!-- História -->
+    <section id="history" class="history">
+      <video class="history-video" autoplay muted loop playsinline>
+        <source src="midia/FundoHistoria.mp4" type="video/mp4">
+      </video>
+
+      <div class="history-overlay"></div>
+
+      <div class="section-title">
+        <h3>História</h3>
+      </div>
+
+      <div class="history-content">
+        <div class="history-synopsis">
+          <span class="history-tag">A GRANDE ERA DOS PIRATAS</span>
+          <h4>A sua jornada começa aqui...</h4>
+        </div>
+
+        <div class="history-shelf">
+          <div class="shelf-row">
+            <div class="history-region-title">
+              <span class="shelf-label">East Blue</span>
+
+              <div class="books">
+                <article class="history-book">
+                  <img src="midia/teste.jpg" alt="Volume 1 Capa">
+                  <h5>Volume 1:<br> O inicio da jornada</h5>
+                </article>
+
+                <article class="history-book">
+                  <img src="midia/teste.jpg" alt="Volume 2 Capa">
+                  <h5>Volume 2:<br> A tripulação se forma</h5>
+                </article>
+
+                <article class="history-book">
+                  <img src="midia/teste.jpg" alt="Volume 3 Capa">
+                  <h5>Volume 3:<br> Aventuras no mar</h5>
+                </article>
+              </div>
+
+              <div class="shelf-row">
+                <span class="shelf-label">Grand Line</span>
+
+              <div class="books">
+                <article class="history-book">
+                  <img src="midia/teste.jpg" alt="Volume 4 Capa">
+                  <h5>Volume 4:<br> A jornada continua</h5>
+                </article>
+
+                <article class="history-book">
+                  <img src="midia/teste.jpg" alt="Volume 5 Capa">
+                  <h5>Volume 5:<br> A busca pelo tesouro</h5>
+                </article>
+
+                <article class="history-book">
+                  <img src="midia/teste.jpg" alt="Volume 6 Capa">
+                  <h5>Volume 6:<br> A batalha final</h5>
+                </article>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ChatBot -->
+    <section id="conversar" class="conversation-section">
+      <div class="conversation-card">
+        <div class="conversation-header">
+          <h3>Conversar</h3>
+          <p>Escolha um personagem e acompanhe a conversa em uma caixa com rolagem.</p>
+        </div>
+
+        <div class="conversation-controls">
+          <label for="personagem-select">Selecione um pirata</label>
+          <select id="personagem-select">
+            <option value="Luffy">Monkey D. Luffy</option>
+            <option value="Zoro">Roronoa Zoro</option>
+            <option value="Sanji">Sanji</option>
+            <option value="Nami">Nami</option>
+            <option value="Robin">Nico Robin</option>
+          </select>
+        </div>
+
+        <div id="conversation-box" class="conversation-box" aria-live="polite">
+          <div class="message message-bot">
+            <span class="message-author">Luffy</span>
+            <p>Olá! Que aventura você quer viver hoje?</p>
+          </div>
+        </div>
+
+        <form id="conversation-form" class="conversation-form">
+          <textarea id="conversation-input" rows="3" placeholder="Digite sua mensagem..."></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
